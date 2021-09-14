@@ -88,8 +88,35 @@ function questionClick() {
 
   // Remaining time
   if (realTimeQuestion === questions.length) {
-  
+    endQuiz();
   } else {
     bringQuestion();
+  }
+}
+
+function endQuiz() {
+  // end the time
+  clearInterval(timerId);
+
+  // end page
+  var endpageEl = document.getElementById("endpage");
+  endpageEl.removeAttribute("class");
+
+  // final score
+  var finalScoreEl = document.getElementById("final-score");
+  finalScoreEl.textContent = time;
+
+ 
+  questionsEl.setAttribute("class", "hide");
+}
+
+function timerGoing() {
+  // refresh the  time
+  time--;
+  timerEl.textContent = time;
+
+  // battle the time
+  if (time <= 0) {
+    endQuiz();
   }
 }
