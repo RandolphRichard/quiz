@@ -6,7 +6,7 @@ var startBtn = document.querySelector("#startbtn");
 var choicesEl = document.querySelector("#choices");
 var initialsEl = document.querySelector("#initials");
 var submitBtn = document.querySelector("#submit");
-
+var reactionEl = document.querySelector("#reaction");
 
 var realTimeQuestion = 0;
 var time = questions.length * 15;
@@ -55,4 +55,41 @@ function bringQuestion() {
     // display on the page
     choicesEl.appendChild(choicePresent);
   });
+}
+
+function questionClick() {
+  // In case the answer is incorrect
+  if (this.value !== questions[realTimeQuestion].answer) {
+    // If the answer is wrong
+    time -= 10;
+
+    if (time < 0) {
+      time = 0;
+    }
+    // what we need to display
+    timerEl.textContent = time;
+    reactionEl .textContent = "Wrong Answer!";
+    reactionEl .style.color = "red";
+   
+  } else {
+    reactionEl .textContent = "Correct Answer!";
+    reactionEl .style.color = "green";
+    
+  }
+
+  // wrong or correct comment
+  reactionEl .setAttribute("class", "reaction");
+  setTimeout(function() {
+    reactionEl .setAttribute("class", "reaction hide");
+  }, 1000);
+
+  // Following question
+  realTimeQuestion++;
+
+  // Remaining time
+  if (realTimeQuestion === questions.length) {
+  
+  } else {
+    bringQuestion();
+  }
 }
