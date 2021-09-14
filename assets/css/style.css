@@ -1,0 +1,59 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+  }
+
+  .thescores {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  a {
+    color: green;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+  }
+
+  .timer {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .main {
+    margin: 100px auto;
+   max-width: 700px;
+  }
+  
+  .start {
+    text-align: center;
+  }
+  
+  
+  button {
+    
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 100%;
+    background-color: green;
+    border-radius: 45px 5px ;
+    color: white;
+   text-shadow: royalblue;
+   display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: red;
+  }
+  
+  
+
+  
