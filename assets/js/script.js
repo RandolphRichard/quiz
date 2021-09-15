@@ -120,3 +120,40 @@ function timerGoing() {
     endQuiz();
   }
 }
+function viewScore() {
+  // What to do with the initials
+  var initials = initialsEl.value.trim();
+
+  if (initials !== "") {
+    // localstorage
+    var topscores =
+      JSON.parse(window.localStorage.getItem("topscores")) || [];
+
+    // format new score object for current user
+    var updatedScore = {
+      score: time,
+      initials: initials
+    };
+
+    // localstorage
+    topscores.push(updatedScore);
+    window.localStorage.setItem("topscores", JSON.stringify(topscores));
+
+    // open the new page
+    window.location.href = "thescores.html";
+  }
+}
+
+function enterKey(event) {
+  if (event.key === "Enter") {
+    viewScore();
+  }
+}
+
+// once you send your initials
+submitBtn.onclick = viewScore;
+
+// start quiz
+startBtn.onclick = startQuiz;
+
+initialsEl.onkeyup = enterKey;
