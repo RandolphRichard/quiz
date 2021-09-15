@@ -1,11 +1,11 @@
 function showScores() {
-    var topscores = JSON.parse(window.localStorage.getItem("topscores")) || [];
+    var topScores = JSON.parse(window.localStorage.getItem("topscores")) || [];
   
-    topscores.sort(function(a, b) {
+    topScores.sort(function(a, b) {
       return b.score - a.score;
     });
   
-    topscores.forEach(function(score) {
+    topScores.forEach(function(score) {
       // bullets for scores
       var liTag = document.createElement("li");
       liTag.textContent = score.initials + " - " + score.score;

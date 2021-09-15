@@ -103,14 +103,14 @@ function endQuiz() {
   endpageEl.removeAttribute("class");
 
   // final score
-  var finalScoreEl = document.getElementById("final-score");
-  finalScoreEl.textContent = time;
+  var realScoreEl = document.getElementById("real-score");
+  realScoreEl.textContent = time;
 
  
   questionsEl.setAttribute("class", "hide");
 }
 
-function timerGoing() {
+function clockTick() {
   // refresh the  time
   time--;
   timerEl.textContent = time;
@@ -126,7 +126,7 @@ function viewScore() {
 
   if (initials !== "") {
     // localstorage
-    var topscores =
+    var topScores =
       JSON.parse(window.localStorage.getItem("topscores")) || [];
 
     // format new score object for current user
@@ -136,8 +136,8 @@ function viewScore() {
     };
 
     // localstorage
-    topscores.push(updatedScore);
-    window.localStorage.setItem("topscores", JSON.stringify(topscores));
+    topScores.push(updatedScore);
+    window.localStorage.setItem("topscores", JSON.stringify(topScores));
 
     // open the new page
     window.location.href = "thescores.html";
