@@ -9,7 +9,7 @@ var submitBtn = document.querySelector("#submit");
 var reactionEl = document.querySelector("#reaction");
 
 var realTimeQuestion = 0;
-var time = questions.length * 15;
+var time = questions.length * 10;
 var timerId;
 
 function startQuiz() {

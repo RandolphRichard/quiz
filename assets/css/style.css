@@ -1,5 +1,14 @@
+
+/* Downloaded the image from my freepic account <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>  */
 body {
     font-family: "Comic Sans MS", sans-serif;
+    background-image: url("/assets/images/1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
   }
 
   .thescores {
@@ -25,11 +34,13 @@ body {
     right: 80px;
     font-size: 20px;
     font-weight: bold;
+    color: white;
   }
 
   .main {
     margin: 100px auto;
    max-width: 700px;
+   color: white;
   }
   
   .start {
@@ -38,7 +49,6 @@ body {
   
   
   button {
-    
     font-family: "Comic Sans MS", sans-serif;
     font-size: 100%;
     background-color: green;
@@ -47,6 +57,8 @@ body {
    text-shadow: royalblue;
    display: inline-block;
     cursor: pointer;
+    margin: 10px;
+    padding: 8px;
     
   }
   
