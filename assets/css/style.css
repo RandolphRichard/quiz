@@ -2,7 +2,7 @@
 /* Downloaded the image from my freepic account <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>  */
 body {
     font-family: "Comic Sans MS", sans-serif;
-    background-image: url("/assets/images/1.jpg");
+    background-image: url("../images/1.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
