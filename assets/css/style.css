@@ -65,6 +65,23 @@ body {
   button:hover {
     background-color: red;
   }
+
+  .hide{
+    display: none;
+  }
+
+  .zoom-out {
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(0.5); /* Safari 3-8 */
+    transform: scale(0.5); 
+  }
+
+  #real-score{
+font-size: 200px;
+transition: transform .6s;
+margin: 0;
+
+  }
   
   
 

@@ -102,6 +102,11 @@ function endQuiz() {
   var endpageEl = document.getElementById("endpage");
   endpageEl.removeAttribute("class");
 
+  var realScoreEl = document.getElementById("real-score");
+  setTimeout(function(){
+    realScoreEl.classList.add("zoom-out")
+    },3000);
+    
   // final score
   var realScoreEl = document.getElementById("real-score");
   realScoreEl.textContent = time;
@@ -109,6 +114,9 @@ function endQuiz() {
  
   questionsEl.setAttribute("class", "hide");
 }
+
+
+
 
 function clockTick() {
   // refresh the  time
