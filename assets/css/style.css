@@ -14,7 +14,7 @@ body {
   .thescores {
     position: absolute;
     top: 20px;
-    left: 80px;
+    left: 40px;
     font-size: 20px;
     font-weight: bold;
   }
@@ -31,7 +31,7 @@ body {
   .timer {
     position: absolute;
     top: 20px;
-    right: 80px;
+    right: 40px;
     font-size: 20px;
     font-weight: bold;
     color: white;
