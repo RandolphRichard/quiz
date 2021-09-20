@@ -17,6 +17,7 @@ body {
     left: 40px;
     font-size: 20px;
     font-weight: bold;
+  
   }
 
   a {
@@ -35,6 +36,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: white;
+   
   }
 
   .main {
@@ -56,7 +58,7 @@ body {
     background-position: 0px -10px;
     background-color: #FA8BFF;
     border-radius: 45px 5px ;
-    color: ;
+    background-size: 1px 100px; 
    text-shadow: royalblue;
    display: inline-block;
     cursor: pointer;
