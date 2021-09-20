@@ -10,11 +10,14 @@
   </head>
 
   <body>
+    <!--The timer section-->
     <div class="timer">Remaining Time: <span id="time">0</span></div>
+
+     <!--Page to see your score-->
     <div class="thescores"><a href="thescores.html">View Scores</a></div>
 
     
-
+ <!--Homepage section-->
     <div class="main">
       <div id="homepage" class="start">
         <h1>Quiz Challenge</h1>
@@ -24,6 +27,7 @@
         <button id="startbtn">Start </button>
       </div>
 
+       <!--Hiden score page and Initial section-->
       <div id="endpage" class="hide">
         <h2>Finished</h2>
         <p>Your score is :</p>
@@ -34,6 +38,8 @@
         </p>
       </div>
 
+       <!--Hiden questions and reaction when a question is well answered or not-->
+
       <div id="questions" class="hide">
         <h2 id="question-title"></h2>
         <div id="choices" class="choices"></div>
@@ -42,6 +48,7 @@
       <div id="reaction" class="reaction hide"></div>
     </div>
 
+     <!--The other Javascript files-->
     <script src="./assets/js/topquestions.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>

@@ -6,7 +6,7 @@ function showScores() {
     });
   
     topScores.forEach(function(score) {
-      // bullets for scores
+      // list  for scores
       var liTag = document.createElement("li");
       liTag.textContent = score.initials + " - " + score.score;
   

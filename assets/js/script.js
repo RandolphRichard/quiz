@@ -49,7 +49,7 @@ function bringQuestion() {
 
     choicePresent.textContent = i + 1 + ". " + choice;
 
-    // add event listener for the choices on click
+  
     choicePresent.onclick = questionClick;
 
     // display on the page
@@ -105,9 +105,9 @@ function endQuiz() {
   var realScoreEl = document.getElementById("real-score");
   setTimeout(function(){
     realScoreEl.classList.add("zoom-out")
-    },3000);
-    
-  // final score
+    },2000);
+
+  // final Real score
   var realScoreEl = document.getElementById("real-score");
   realScoreEl.textContent = time;
 
